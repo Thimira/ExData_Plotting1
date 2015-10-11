@@ -31,7 +31,7 @@ with(epc, {
 	lines(DateTime, Sub_metering_1, col = "black")
 	lines(DateTime, Sub_metering_2, col = "red")
 	lines(DateTime, Sub_metering_3, col = "blue")
-	legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2" , "Sub_metering_3"), lwd = 2, lty= 1)
+	legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2" , "Sub_metering_3"), lwd = 2, lty= 1, bty = "n")
 })
 with(epc, {
 	plot(DateTime, Global_reactive_power, type = "n", xlab = "datetime")
